@@ -89,7 +89,7 @@ if location_input:
             st.session_state.last_condition = ""
 
         if current_condition != st.session_state.last_condition:
-            send_msg(current_condition,location['name'])
+            #send_msg(current_condition,location['name'])
             st.session_state.last_condition = current_condition
             st.markdown(f"📤 SMS sent for new condition: **{current_condition}**")
         else:
